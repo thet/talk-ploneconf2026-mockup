@@ -6,17 +6,22 @@
 <!-- .slide: data-background="Cyan" -->
 
 <!-- .slide: data-background="Blue" -->
-# Ajaxify Plone
+# What’s Up, Mockup?
 
 <br>
-<a href="https://thet.github.io/talk-ploneconf2025-ajaxify">
-  https://thet.github.io/talk-ploneconf2025-ajaxify
-</a>
+News from Mockup and Patternslib
+<br>
 
 <footer>
-    Johannes Raggam<br>
-    <a href="https://www.syslab.com/">syslab.com GmbH</a><br>
-    @ Plone Conference 2025
+  <a href="https://thet.github.io/talk-ploneconf2026-mockup">
+    https://thet.github.io/talk-ploneconf2026-mockup
+  </a>
+  <br>
+  @ Plone Conference 2026
+  <br>
+  <br>
+  Peter Mathis, <a href="https://www.kombinat.at/">Kombinat Media Gestalter GmbH</a><br>
+  Johannes Raggam, <a href="https://www.syslab.com/">syslab.com GmbH</a><br>
 </footer><!-- .element: class="footnote mt-8" -->
 
 
@@ -24,6 +29,10 @@
 
 <!-- .slide: data-background="lime" -->
 ## Look at this!
+
+
+<!-- .slide: data-background="lime" -->
+EXAMPLE! OLD CONTENT STILL HERE FOR REFRENCE
 
 
 <!-- .slide: data-background="lime" -->
