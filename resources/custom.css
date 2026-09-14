@@ -256,8 +256,3 @@ iframe {
 .reveal .hljs-ln-numbers {
   display: none !important;
 }
-
-.about-me {
-  overflow: scroll;
-  font-size: 1.2rem;
-}
