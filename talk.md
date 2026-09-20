@@ -20,8 +20,8 @@ News from Mockup and Patternslib
   @ Plone Conference 2026
   <br>
   <br>
-  Johannes Raggam, <a href="https://www.syslab.com/">syslab.com GmbH</a><br>
   Peter Mathis, <a href="https://www.kombinat.at/">Kombinat Media Gestalter GmbH</a><br>
+  Johannes Raggam, <a href="https://www.syslab.com/">syslab.com GmbH</a><br>
 </footer><!-- .element: class="footnote mt-8" -->
 
 
@@ -255,8 +255,79 @@ Report issues on github.com/plone/mockup.
 <!-- .slide: data-background="Purple" -->
 ## Patternslib
 
-Note:
-Johannes, ~12 min. TODO: fill in.
+
+<!-- .slide: data-background="Purple" -->
+### What is it?
+
+- JavaScript framework for frontend UI functionality
+- Define and register "Patterns"
+
+
+<!-- .slide: data-background="Purple" -->
+### Idea
+
+- Daniël Kohlbach (Cornelis), 2009
+- Let UI designers add JavaScript functionality without writing JavaScript<!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="Purple" -->
+### Development
+
+- Initial implementation: Guillaume Potier
+- Wichert Akkerman, Florian Friesdorf, JC Brand, Yiorgis Gozadinos, Fullvio Casali, Alexander Pilz, Johannes Raggam
+- ES6 Modernization in 2020
+
+
+<!-- .slide: data-background="Purple" -->
+### Mockup
+
+- Rok Garbas forked in 2012 from Patternsib
+- JC Brand Back to Patternslib in 2015
+- ES6 Modernization in 2022
+
+
+
+
+<!-- .slide: data-background="Purple" -->
+## What's up?
+
+
+<!-- .slide: data-background="Purple" -->
+### pat-bind
+
+- Data binding Pattern
+- Why: Update UI without pat-inject
+- How: Based on JavaScript Signals
+
+<!-- Why: Allow to update parts of the UI without reloading via pat-inject -->
+
+
+<!-- .slide: data-background="Purple" -->
+### pat-bind demo
+
+Demo
+
+
+<!-- .slide: data-background="Purple" -->
+###  Internals
+
+- Dependency management: pnpm<!-- .element: class="fragment" -->
+- Build framework: Vite<!-- .element: class="fragment" -->
+- Test framework: Vitest<!-- .element: class="fragment" -->
+- Module federation<!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="Purple" -->
+
+- Remove Modernizr<!-- .element: class="fragment" -->
+- Remove jQuery<!-- .element: class="fragment" -->
+- Dependencies major updates<!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="Purple" -->
+
+- Split core from Patterns<!-- .element: class="fragment" -->
+- Split Patterns with huge external dependencies<!-- .element: class="fragment" -->
 
 
 
@@ -267,6 +338,9 @@ Johannes, ~12 min. TODO: fill in.
 - 5.6 → Plone 6.2: contentbrowser, Svelte 5, TinyMCE 8
 - 5.7 → Plone 6.3: filemanager, restapi only
 - Mockup 6 → Plone 7: drop Backbone and the select2 fork, jQuery 4
+- Patternslib 10 & Patternslib core: Plone 7
+
+
 
 
 <!-- .slide: data-background="lime" -->
@@ -275,6 +349,7 @@ Johannes, ~12 min. TODO: fill in.
 - https://github.com/plone/mockup
 - https://github.com/plone/mockup/blob/master/CHANGES.md
 - https://patternslib.com
+- https://github.com/patternslib/Patterns
 - https://thet.github.io/talk-ploneconf2026-mockup
 
 
