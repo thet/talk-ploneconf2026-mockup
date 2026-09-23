@@ -70,17 +70,18 @@ TODO: verify whether staticresources 3.1.0a2 already bundles 5.7.0-alpha.0.
 <!-- .slide: data-background="Yellow" -->
 ### The 5.6 stack
 
-- Patternslib 9.10
+- Patternslib 9.11
 - Bootstrap 5.3, Bootstrap Icons
 - TinyMCE 8
 - <strong>Svelte 5</strong>
 - @plone/registry, Webpack Module Federation
 - <strong>pnpm</strong> instead of Yarn (since 5.6)
 
-<p>… and still: jQuery, Backbone, underscore.</p><!-- .element: class="fragment" -->
+<p>… and still: jQuery, Backbone, underscore.</p><!-- .element: class="fragment footnote" -->
 
-<p>The real PITA: an old, custom-patched <strong>select2</strong> fork (pat-relateditems).<br>
-Hopefully gone in Mockup 6 (Plone 7).</p><!-- .element: class="fragment" -->
+<p>The real PITA: an old, custom-patched <strong>select2</strong> fork (pat-relateditems).</p><!-- .element: class="fragment footnote" -->
+
+<p>Hopefully gone in Mockup 6 (Plone 7).</p><!-- .element: class="fragment footnote" -->
 
 Note:
 DataTables is fine: pat-datatables is a supported pattern and DataTables gets updated.
@@ -214,15 +215,13 @@ stores and tests. Humans reviewed, tested in the browser, and kept the architect
 ### Status
 
 - 5.7.0-alpha.0, target: <strong>Plone 6.3</strong>
-- Out of scope for now: add-content menu
-- Ideas: miller column view, reuse in contentbrowser
 - Not wired up in Plone yet: <code>folder_contents</code> still renders <code>pat-structure</code>
 
 
 <!-- .slide: data-background="Cyan" -->
 ### Try it: override folder_contents
 
-Mockup 5.7.0-alpha.0 bundle + z3c.jbot override in your add-on:
+plone.staticresources >=3.1.0a3 + z3c.jbot override in your add-on:
 
 ```xml
 <include package="z3c.jbot" file="meta.zcml" />
@@ -240,7 +239,7 @@ Mockup 5.7.0-alpha.0 bundle + z3c.jbot override in your add-on:
 </metal:content-core>
 ```
 
-<p>Same view, same options JSON – the pattern reads the legacy <code>pat-structure</code> options.</p><!-- .element: class="fragment footnote" -->
+<p>Same view, same options – the pattern reads the legacy <code>pat-structure</code> options.</p><!-- .element: class="fragment footnote" -->
 
 Note:
 Or register your own browser view for folder_contents on your layer.
