@@ -40,7 +40,9 @@ News from Mockup and Patternslib
 - Shipped to Plone via <strong>plone.staticresources</strong>
 
 ```html
-<input class="pat-contentbrowser" data-pat-contentbrowser='{"selectableTypes": ["Image"]}' />
+<input class="pat-contentbrowser"
+       data-pat-contentbrowser='{"selectableTypes": ["Image"]}'
+/>
 ```
 <!-- .element: class="fragment" -->
 
