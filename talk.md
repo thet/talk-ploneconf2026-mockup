@@ -34,7 +34,7 @@ News from Mockup and Patternslib
 <!-- .slide: data-background="Yellow" -->
 ### What is Mockup?
 
-- The JavaScript behind <strong>Blicca</strong> (formerly Classic UI)
+- The JavaScript behind <strong>Plone Blicca</strong> (fka Classic UI)
 - A collection of <strong>patterns</strong>: declare behavior in HTML
 - Built on top of <strong>Patternslib</strong>
 - Shipped to Plone via <strong>plone.staticresources</strong>
@@ -46,9 +46,6 @@ News from Mockup and Patternslib
 ```
 <!-- .element: class="fragment" -->
 
-Note:
-TODO: optional Stack-Diagramm Patternslib → Mockup → plone.staticresources → Plone.
-
 
 <!-- .slide: data-background="Yellow" -->
 ### Which version is where?
@@ -56,8 +53,8 @@ TODO: optional Stack-Diagramm Patternslib → Mockup → plone.staticresources �
 | Plone | plone.staticresources | Mockup            |
 |-------|-----------------------|-------------------|
 | 6.1   | 2.x                   | 5.4.x             |
-| 6.2   | 3.0.x                 | **5.6.x** (5.6.11, Sept 2026) |
-| 6.3   | 3.1.x                 | **5.7.x** (5.7.0-alpha.0)     |
+| 6.2   | 3.0.x                 | **5.6.x** (5.6.14, Sept 2026) |
+| 6.3   | 3.1.x                 | **5.7.x** (5.7.0-alpha.3)     |
 
 Note:
 5.6.0 released 2026-03-24, 5.6.11 on 2026-09-11 – 11 bugfix releases in 6 months.
@@ -73,11 +70,11 @@ TODO: verify whether staticresources 3.1.0a2 already bundles 5.7.0-alpha.0.
 ### The 5.6 stack
 
 - Patternslib 9.11
-- Bootstrap 5.3, Bootstrap Icons
+- Bootstrap 5.3, Bootstrap Icons 1.13.1
 - TinyMCE 8
-- <strong>Svelte 5</strong>
-- @plone/registry, Webpack Module Federation
-- <strong>pnpm</strong> instead of Yarn (since 5.6)
+- Svelte 5 (@plone/registry)
+- Webpack Module Federation
+- pnpm instead of Yarn (since 5.6)
 
 <p>… and still: jQuery, Backbone, underscore.</p><!-- .element: class="fragment footnote" -->
 
@@ -123,7 +120,7 @@ Switch to browser tab: http://localhost:8080/Plone/demo-page/edit (TODO: final U
 
 Register your own Svelte component for the selected items:
 
-```js [1-8|4-7]
+```js
 import plone_registry from "@plone/registry";
 
 async function register() {
@@ -132,20 +129,15 @@ async function register() {
         component: (await import("./MySelectedItem.svelte")).default,
     });
 }
-```
 
-<p>
-  Add-on bundles share the <code>svelte</code> runtime via module federation (5.6.9).<br>
-  Registering under the default key replaces it site-wide (5.6.11).
-</p><!-- .element: class="fragment footnote" -->
+register();
+```
 
 Note:
 Contentbrowser runs on Svelte 5 but still uses the classic writable() stores from svelte/store,
 not runes. Runes (explicit $state/$derived in .svelte.ts classes) are used in the filemanager.
 Or use a custom key and point the pattern option componentRegistryKeys.selectedItem at it.
 Patterns are initialized inside the SelectedItems template as well (5.6.9).
-
-
 
 
 <!-- .slide: data-background="Cyan" -->
@@ -201,8 +193,8 @@ Switch to browser tab: http://localhost:8081/Plone/demo-folder/folder_contents (
 <!-- .slide: data-background="Cyan" -->
 ### How it was built
 
-- 5 days, one "Buschenschank" sprint
-- <strong>vibe coded</strong> with AI, spec first
+- 5 days at "Buschenschank Sprint"
+- Agentic approach, <strong>spec first<strong>
 - 29 Svelte components, 13 stores, 25 test files
 - ~8.6k lines of code, ~3.7k lines of tests
 
