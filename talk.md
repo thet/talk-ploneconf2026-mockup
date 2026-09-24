@@ -304,18 +304,39 @@ Report issues on github.com/plone/mockup.
 
 
 <!-- .slide: data-background="Purple" -->
+```html
+<input class="pat-bind"
+       data-pat-bind="key: name">
+
+<input class="pat-bind"
+       data-pat-bind="key: name">
+
+<div class="pat-bind"
+     data-pat-bind="key: name; value: [title]"
+     title="">
+</div>
+```
+
+
+<!-- .slide: data-background="Purple" -->
 ### pat-bind demo
 
 Demo
 
 
 <!-- .slide: data-background="Purple" -->
-###  Internals
-
+### Done
+- Deterministic bundle loading<!-- .element: class="fragment" -->
 - Dependency management: pnpm<!-- .element: class="fragment" -->
+- Dependency updates<!-- .element: class="fragment" -->
+
+
+<!-- .slide: data-background="Purple" -->
+###  Up to come
+
 - Build framework: Vite<!-- .element: class="fragment" -->
 - Test framework: Vitest<!-- .element: class="fragment" -->
-- Module federation<!-- .element: class="fragment" -->
+- Build agnostic Module federation<!-- .element: class="fragment" -->
 
 
 <!-- .slide: data-background="Purple" -->
